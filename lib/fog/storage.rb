@@ -23,6 +23,9 @@ module Fog
       when :rackspace
         require 'fog/rackspace/storage'
         Fog::Storage::Rackspace.new(attributes)
+      when :upyun
+        require 'fog/upyun/storage'
+        Fog::Storage::UpYun.new(attributes)
       else
         raise ArgumentError.new("#{provider} is not a recognized storage provider")
       end
