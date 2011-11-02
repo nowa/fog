@@ -9,6 +9,7 @@ module Fog
       
       model_path 'fog/upyun/models/storage'
       model       :directory
+      collection  :directories
       model       :file
       collection  :files
       
